@@ -632,53 +632,6 @@ It also makes some visualizations and has lots of astro-specific modules.
 
 ---
 
-<!-- .slide: style="height: 100%;" -->
-
-## Who develops `yt`?
-
-<div class="fig-container" data-file="figures/yt_repo.html" data-preload data-style="height: 768px;">
-</div>
-
----
-
-# Next: Data Storytelling
-
-We have to span the entire process from data **acquisition**, to **analysis**,
-to **application** to develop understandable information for researchers.
-
-We are implementing this grammar of analysis within `yt`, starting with high-level operations like visualizations.  We build this on the concepts developed by precursors such as `vega-lite` (Satyanarayan et al), volume visualization (Shih et al) and the Grammar of Graphics (Wilkinson), to encompass the full pipeline of registration, transformation, selection and reduction as applied to volumetric data.
-
-<div class="multiCol">
-<div class="col">
-
-```json
-{
-    "fields": ["density", "temperature"],
-    "axes": ["z"],
-    "center": {
-        "max": "density"
-    },
-    "widths": [ [50.0, "kpc"] ],
-    "min": {
-        "density": {
-            "minimum": "density"
-        }
-    },
-    "max": {
-        "density": [1e-22, "g/cm**3"]
-    }
-}
-```
-
-</div>
-<div class="col">
-
-![An example image](images/galaxy0030_Slice_z_density.png) <!-- .element: style="max-height: 300px;" -->
-
-</div>
-
----
-
 # Next: Expanding
 
 <p class="fragment">Our tools right now are focused on the technicalities, not the story.</p>
